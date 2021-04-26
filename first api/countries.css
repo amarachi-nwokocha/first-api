@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/**declaring variables**/
+:root{
+  --background-color: #fff;
+  --text-color: #000;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --cardbackgrond-color:  hsl(0, 0%, 98%)
+
+}
+.dark:root{
+  --background-color: hsl(207, 26%, 17%);
+  --text-color: #fff;
+  --cardbackground-color: hsl(209, 23%, 22%);
+}
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  .nav{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 10px;
+    width: 100%;
+  }
+  li{
+    list-style: none;
+}
+/****slider***/
+.label{
+    background-color: #111;
+    height: 26px;
+    width: 50px;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+
+  }
+  .checkbox{
+    opacity: 0;
+    position: absolute;
+  }
+  .checkbox:checked + .label .ball{
+    transform: translateX(24px);
+  }
+  .ball{
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  .fa-moon{
+    color: #f1c4af;
+  }
+  .fa-sun{
+    color: #f39c12;
+  }
+  /**end of slider*/
+  #button{
+    width: 10%;
+    padding: 5px 10px;
+    background-color: var( --background-color);
+    border: 3px solid  var( --background-color) ;
+    color: var(--text-color);
+     transition: 0.5s;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    outline: none;
+    margin: 26px;
+  }
+
+  #container{
+     display: flex;
+     flex-direction: row;
+  }
+  #image{
+   
+    margin-right: 300px;
+  }
+ #images{
+    width: 30rem;
+    height: 20rem;
+    margin: 40px;
+    margin-left: 30px;
+    overflow: none;
+    padding: 0;
+    }
+    #container2{
+      margin-top: 70px;
+    }
+      .header{
+        margin-bottom: 10px;
+    }
+
+    /*media query*/
+    @media screen and (max-width: 480px) {
+      #button{
+        width: 40%;
+      }
+     #container{
+       display: flex;
+       flex-direction: column;
+     }
+     #images{
+       width: 17rem;
+       margin: left 30px;;
+       padding-left: 0px;
+      }
+      #container2{
+        width: fit-content;
+        margin-left: 70px;
+       
+      }
+    }
