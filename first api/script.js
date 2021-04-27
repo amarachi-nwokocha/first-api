@@ -46,10 +46,13 @@ function renderToDom(array) {
     <div id="card">
     <a href="countries.html?name=${eachName}">
     <img src="${flags}" alt="">
-    <h2><b>${eachName}</b></h2>
-    <p id="data">Population:${population}</p>
-    <p id="data">Capital:${capital}</p>
-        <p id="data" class="region">Region:${regions}</p>
+    <div class = "cardBody">
+    <h3>${eachName}</h3> 
+    <p id="data"><b>Population:</b> &nbsp;${population}</p>
+      <p id="data" class="region"><b>Region:</b> &nbsp; ${regions}</p>
+    <p id="data"><b>Capital:</b> &nbsp; ${capital}</p>
+      
+        </div>
         </a>
       </div>`;
 
