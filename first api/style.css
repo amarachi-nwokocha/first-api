@@ -76,8 +76,8 @@ input[type="text"] {
 
 /**added class*/
 img {
-  width: 230px;
-  height: 150px;
+  width: 270px;
+  height: 190px;
   border-radius: 5px 5px 0px 0px;
   margin: 0;
   padding: 0;
@@ -100,8 +100,8 @@ img {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 7px var(--shadow-color);
   transition: 0.3s;
-  width: 230px;
-  height: 350px;
+  width: 270px;
+  height: 390px;
   background-color: var(--cardbackground-color);
   color: var(--text-color);
   margin-top: 3rem;
@@ -192,20 +192,17 @@ select {
   ul {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin-left: 3rem;
-    margin-right: 2rem;
+    margin-left: 6rem;
   }
   #input {
-    width: 100%;
+    width: 120%;
     margin-top: -15px;
     margin-left: 3px;
   }
   #regions {
     width: 70%;
     margin-left: 10px;
-    margin-top: 50px;
-
-    margin-bottom: 3px;
+    margin-top: 30px;
   }
   #button {
     position: relative;
@@ -216,6 +213,12 @@ select {
   }
   #card {
     margin-left: 2px;
+    width: 270px;
+    height: 350px;
+  }
+  img {
+    width: 270px;
+    height: 150px;
   }
   .cont {
     display: flex;
