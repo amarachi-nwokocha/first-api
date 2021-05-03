@@ -41,16 +41,23 @@ async function getdata() {
     let anotherContainer = document.createElement("div");
     anotherContainer.setAttribute("id", "container2");
     anotherContainer.innerHTML = `
+          <div class='sec1'>
       <h2 class="header">  ${e.name}</h2>
-        <p class =" text"> Native Name: ${nativeName}</p>
-        <p class ="text"> Popuation : &nbsp;${population}</p>
-        <p class="text"> Region :&nbsp; ${regions}</p>
-        <p class="text"> Sub-Region :&nbsp; ${subRegion}</p>
-        <p class="text"> Capital :&nbsp; ${capital}</p>
-        <p class="text">Top Level Domain : ${topLevelDomain}</p>
-        <p class="text"> Currencies : ${currencies[0].name}</p>
-        <p class="text"> Languages : ${languages[0].name}</p>
-        <p class ="text"> Border Countries : ${borders[0]} </p>
+        <p class =" text"> <b>Native Name:</b> ${nativeName}</p>
+        <p class ="text"> <b>Popuation :</b> &nbsp;${population}</p>
+        <p class="text"> <b>Region :</b>&nbsp; ${regions}</p>
+        <p class="text"> <b>Sub-Region :</b>&nbsp; ${subRegion}</p>
+        <p class="text"> <b>Capital:</b>&nbsp; ${capital}</p>
+          </div>
+        <div class='sec2'>
+        <p class="text"><b>Top Level Domain :</b> ${topLevelDomain}</p>
+        <p class="text"> <b>Currencies :</b> ${currencies[0].name}</p>
+        <p class="text"> <b>Languages :</b> ${languages[0].name}</p>
+        </div>
+        <div class='sec3'>
+        <p class ="text"> <b>Border Countries :</b>  <a href="countries.html?name=${borders[0]}"><span>${borders[0]}</span></a></p>
+        </div>
+         
       `;
 
     generalContainer.appendChild(anotherContainer);
