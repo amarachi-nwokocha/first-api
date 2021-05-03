@@ -137,8 +137,8 @@ a {
     flex-direction: column;
   }
   #images {
-    width: 25rem;
-    margin: left 30px;
+    width: 20rem;
+    margin: left 25px;
     padding-left: 0px;
   }
   nav {
