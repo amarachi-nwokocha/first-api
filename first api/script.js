@@ -16,17 +16,31 @@ let region = document.querySelectorAll("#region");
 let output;
 let inputField = document.getElementById("input");
 console.log(inputField);
+let loading = document.getElementById("loader");
+console.log(loading);
 //let body = document.getElementByTagName('body')
 //let card = document.getElementByClassName('card');
 //console.log(card);
+function displayLoading() {
+  loading.style.display = "block";
+  setTimeout(() => {
+    loading.style.display = "none";
+  }, 5000);
+}
+
+function removeLoading() {
+  loading.style.display = "none";
+}
 async function getData() {
   const response = await fetch("https://restcountries.eu/rest/v2/all");
   console.log(response); //object
+  displayLoading();
   allResponse = await response.json();
 
   console.log(allResponse);
   renderToDom(allResponse);
   searchField(allResponse);
+  removeLoading();
   return allResponse;
 }
 getData();
@@ -48,7 +62,7 @@ function renderToDom(array) {
     <img src="${flags}" alt="">
     <div class = "cardBody">
     <h3>${eachName}</h3> 
-    <p id="data"><b>Population:</b> &nbsp;${population}</p>
+    <p id="data"><b>Population:</b> &nbsp;${population.toLocaleString()}</p>
       <p id="data" class="region"><b>Region:</b> &nbsp; ${regions}</p>
     <p id="data"><b>Capital:</b> &nbsp; ${capital}</p>
       
@@ -89,8 +103,10 @@ selectElement.addEventListener("change", async (e) => {
       `https://restcountries.eu/rest/v2/region/${output}`
     );
     //console.log(secondResponse);
+    displayLoading();
     const filteredData = await secondResponse.json();
     console.log(filteredData);
+    removeLoading();
     lists.innerHTML = "";
     renderToDom(filteredData);
   }
