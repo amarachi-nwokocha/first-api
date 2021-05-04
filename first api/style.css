@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 /**declaring variables**/
 :root {
@@ -120,9 +120,12 @@ input[type="text"] {
   width: 70px;
   height: 70px;
   animation: spin 2s linear infinite;
-  display: none;
+  display: flex;
+  align-items: center;
 }
-
+p {
+  font-weight: 600;
+}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -141,6 +144,8 @@ img {
   border-radius: 5px 5px 0px 0px;
   margin: 0;
   padding: 0;
+}
+#listItem {
 }
 /*end of li*/
 /*list */
@@ -170,6 +175,9 @@ ul {
   padding-left: 20px;
   font-size: 17px;
   padding-top: 20px;
+}
+h3 {
+  font-weight: 800;
 }
 .cardBody h3 {
   margin-bottom: 3px;
@@ -215,8 +223,7 @@ select {
   ul {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    position: relative;
-    left: 79px;
+    margin-left: 14rem;
   }
   #input {
     width: 120%;
@@ -250,19 +257,6 @@ select {
     border: 2px;
   }
 }
-
-/*
-
-.in {
-  position: relative;
-  left: 160px;
-  z-index: 1;
-  pointer-events: none;
-}
-
-
-
-
 @media screen and (min-width: 500px) {
   ul {
     display: grid;
@@ -276,4 +270,18 @@ select {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/*
+
+.in {
+  position: relative;
+  left: 16rem;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+
+
+
 */
