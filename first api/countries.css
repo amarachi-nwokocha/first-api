@@ -129,8 +129,11 @@ a {
 /*media query*/
 @media screen and (max-width: 480px) {
   #button {
-    width: 40%;
-    margin-left: 55px;
+    width: 90px;
+    margin-left: 60px;
+  }
+  .arr {
+    margin-right: 10px;
   }
   #container {
     display: flex;
@@ -138,8 +141,11 @@ a {
   }
   #images {
     width: 20rem;
-    margin: left 25px;
-    padding-left: 0px;
+    margin-top: -70px;
+    margin-left: 55px;
+    margin-right: 25px;
+    position: relative;
+    bottom: -50px;
   }
   nav {
     width: 190%;
@@ -147,6 +153,7 @@ a {
   #container2 {
     width: fit-content;
     margin-left: 65px;
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
   }
