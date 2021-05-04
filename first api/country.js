@@ -44,7 +44,7 @@ async function getdata() {
           <div class='sec1'>
       <h2 class="header">  ${e.name}</h2>
         <p class =" text"> <b>Native Name:</b> ${nativeName}</p>
-        <p class ="text"> <b>Popuation :</b> &nbsp;${population}</p>
+        <p class ="text"> <b>Popuation :</b> &nbsp;${population.toLocaleString()}</p>
         <p class="text"> <b>Region :</b>&nbsp; ${regions}</p>
         <p class="text"> <b>Sub-Region :</b>&nbsp; ${subRegion}</p>
         <p class="text"> <b>Capital:</b>&nbsp; ${capital}</p>
