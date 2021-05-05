@@ -55,7 +55,9 @@ async function getdata() {
         <p class="text"> <b>Languages :</b> ${languages[0].name}</p>
         </div>
         <div class='sec3'>
-        <p class ="text"> <b>Border Countries :</b>  <a href="countries.html?name=${borders[0]}"><span>${borders[0]}</span></a></p>
+        <p class ="text"> <b>Border Countries :</b>  <a href="countries.html?name=${
+          borders[0]
+        }"><span>${borders[0]}</span></a></p>
         </div>
          
       `;
