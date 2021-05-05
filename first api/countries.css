@@ -133,10 +133,10 @@ a {
 .sec3 {
 }
 /*media query*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 380px) {
   #button {
     width: 90px;
-    margin-left: 60px;
+    margin-left: 40px;
   }
   .nav {
     margin: 2px;
@@ -150,9 +150,10 @@ a {
     flex-direction: column;
   }
   #images {
-    width: 20rem;
+    width: 15rem;
+    height: 15rem;
     margin-top: 70px;
-    margin-left: 35px;
+    margin-left: 20px;
     margin-right: 25px;
     position: relative;
   }
