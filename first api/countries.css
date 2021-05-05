@@ -22,10 +22,12 @@ body {
 }
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 10px;
   width: 100%;
+  padding-left: 70px;
+  padding-right: 120px;
 }
 li {
   list-style: none;
@@ -67,15 +69,15 @@ li {
 }
 /**end of slider*/
 #button {
-  width: 10%;
-  padding: 5px 10px;
   background-color: var(--background-color);
   border: 3px solid var(--background-color);
   color: var(--text-color);
   transition: 0.5s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   outline: none;
-  margin: 26px;
+  margin-left: 70px;
+  margin-top: 30px;
+  padding: 10px;
 }
 
 #container {
@@ -84,6 +86,7 @@ li {
 }
 #image {
   margin-right: 150px;
+  margin-left: 1.5rem;
 }
 #images {
   width: 35rem;
@@ -99,6 +102,9 @@ li {
 }
 .header {
   margin-bottom: 10px;
+}
+.arr {
+  margin-right: 10px;
 }
 
 span {
@@ -132,8 +138,12 @@ a {
     width: 90px;
     margin-left: 60px;
   }
-  .arr {
-    margin-right: 10px;
+  .nav {
+    margin: 2px;
+    padding: 2rem;
+    box-sizing: border-box;
+    width: 100%;
+    width: 100%;
   }
   #container {
     display: flex;
@@ -141,15 +151,12 @@ a {
   }
   #images {
     width: 20rem;
-    margin-top: -70px;
-    margin-left: 55px;
+    margin-top: 70px;
+    margin-left: 35px;
     margin-right: 25px;
     position: relative;
-    bottom: -50px;
   }
-  nav {
-    width: 190%;
-  }
+
   #container2 {
     width: fit-content;
     margin-left: 65px;
