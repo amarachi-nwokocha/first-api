@@ -150,11 +150,11 @@ a {
     flex-direction: column;
   }
   #images {
-    width: 15rem;
+    width: 19rem;
     height: 15rem;
     margin-top: 70px;
     margin-left: 20px;
-    margin-right: 25px;
+    margin-right: 17px;
     position: relative;
   }
 
