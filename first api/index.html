@@ -7,7 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/913b00d8f7.js" crossorigin="anonymous"></script>
 </head>
 <body id="white">
@@ -25,7 +26,10 @@
         </div>
         <div id="container">
            <div class="cont">
+        
             <input id="input" type="search" placeholder="search for a country">
+            <!--add a loader-->
+            <div id="loader"></div>
             <label for="regions"></label>
             <select name="regions" id="regions">
                 <option disabled hidden selected>filter by region</option>
@@ -37,8 +41,7 @@
                 <option value="Oceania">Oceania</option>
             </select>
                </div>
-               <!--add a loader-->
-            <div id="loader"></div>
+              
     
     
                 <ul id="list"></ul>
